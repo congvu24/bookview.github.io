@@ -418,7 +418,6 @@ body {
     border-top-right-radius: 20px;
     padding: 50px 10px;
     height: fit-content;
-    max-height: 100vh;
   }
 
   &--table {
@@ -444,6 +443,7 @@ body {
 
     @media screen and (max-width: 500px) {
       width: 80%;
+      margin: auto;
     }
 
     img {

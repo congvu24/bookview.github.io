@@ -475,7 +475,6 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  max-height: 100vh;
 }
 
 .reason--table {
@@ -510,6 +509,7 @@ body {
 @media screen and (max-width: 500px) {
   .reason--item {
     width: 80%;
+    margin: auto;
   }
 }
 
