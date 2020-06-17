@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: "Varela Round", sans-serif;
   font-size: 16px;
+
   @media screen and (max-width: 500px) {
     font-size: 13px;
   }
@@ -21,32 +22,40 @@ body {
     display: flex;
     align-items: center;
     padding: 20px 0;
+
     @media screen and (max-width: 500px) {
       flex-direction: column;
       align-items: flex-start;
     }
   }
+
   ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     margin-bottom: 0;
     margin-left: auto;
+
     @media screen and (max-width: 500px) {
       margin-left: unset;
     }
+
     li {
       margin: 0 20px;
+
       @media screen and (max-width: 500px) {
         margin: 0 10px 0 0;
       }
     }
+
     a {
       font-size: 1.2em;
       color: white;
     }
   }
+
   a {
+
     &:hover,
     &:active {
       text-decoration: none;
@@ -60,6 +69,7 @@ body {
     color: white;
     text-shadow: 4px 3px 0px #00000054;
   }
+
   &--login {
     background-color: black;
     padding: 4px 8px;
@@ -67,6 +77,7 @@ body {
     position: relative;
     font-weight: 700;
     font-size: 1.15em;
+
     &::before {
       content: "";
       position: absolute;
@@ -79,6 +90,7 @@ body {
       z-index: 0;
       transition: all 0.5s ease;
     }
+
     &:hover {
       &::before {
         top: 6px;
@@ -89,13 +101,14 @@ body {
 }
 
 .landing {
-  background: url("/images/landing\ background.png");
+  background: url("./images/landing\ background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #ffb000;
   width: 100vw;
   height: 100vh;
+
   &--wrap {
     display: flex;
     align-items: center;
@@ -105,6 +118,7 @@ body {
   @media screen and (max-width: 500px) {
     width: 100vw;
     height: unset;
+
     &--wrap {
       height: unset;
     }
@@ -113,9 +127,11 @@ body {
   &--image {
     width: 90%;
   }
+
   &--title-wrap {
     position: relative;
   }
+
   &--title-shadow-wrap {
     width: 100%;
     height: 100%;
@@ -123,18 +139,21 @@ body {
     top: 5px;
     left: 5px;
   }
+
   &--title {
     font-size: 4.5em;
     font-weight: 900;
     line-height: 1;
     position: relative;
     font-family: sans-serif;
+
     &__shadow {
       -webkit-text-fill-color: #ffb000;
       -webkit-text-stroke-width: 3px;
       -webkit-text-stroke-color: white;
     }
   }
+
   &--about {
     max-width: 500px;
     width: 80%;
@@ -143,6 +162,7 @@ body {
     margin: 20px 0;
     line-height: 1.15;
   }
+
   &--button {
     background-color: #150035;
     color: #ffb000;
@@ -153,6 +173,7 @@ body {
     margin-top: 10px;
     position: relative;
     z-index: 100;
+
     &::before {
       content: "";
       position: absolute;
@@ -165,6 +186,7 @@ body {
       z-index: 0;
       transition: all 0.5s ease;
     }
+
     &:hover {
       &::before {
         top: 6px;
@@ -192,11 +214,13 @@ body {
   background-color: #fff;
   box-shadow: 0 5px 170px 0 rgba(0, 0, 0, 0.1);
   height: 237px;
+
   @media screen and (max-width: 500px) {
     flex-direction: column;
     height: unset;
     transform: translateY(-5%);
     padding: 30px 30px;
+
     &--item {
       width: 100%;
       margin-bottom: 30px;
@@ -211,23 +235,29 @@ body {
     line-height: 30px;
     font-weight: 700;
   }
+
   &--icon {
     i {
       font-size: 2em;
+
       &.red {
         color: rgb(240, 108, 108);
       }
+
       &.green {
         color: rgb(95, 243, 132);
       }
+
       &.blue {
         color: rgb(108, 170, 240);
       }
+
       &.yellow {
         color: rgb(225, 250, 114);
       }
     }
   }
+
   a {
     display: inline-block;
     padding-right: 20px;
@@ -242,6 +272,7 @@ body {
 .feature {
   margin-top: 50px;
   margin-bottom: 100px;
+
   h3 {
     margin-top: 0;
     margin-bottom: 0;
@@ -252,11 +283,13 @@ body {
     font-weight: 700;
     margin-bottom: 20px;
   }
+
   p {
     color: rgba(19, 20, 21, 0.9);
     font-size: 1.05em;
     font-weight: 700;
   }
+
   &--table {
     padding: 30px;
     border-radius: 20px 0 0 20px;
@@ -264,6 +297,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
   &--item {
     background: white;
     padding: 8px 16px;
@@ -274,6 +308,7 @@ body {
     font-weight: 700;
     display: flex;
     align-items: center;
+
     i {
       background-color: #ffb000;
       display: flex;
@@ -293,13 +328,16 @@ body {
 
 .trending {
   margin-top: 200px;
+
   &--left {
     position: relative;
     padding: 0 70px !important;
+
     @media screen and (max-width: 500px) {
       padding: 0 20px !important;
       margin-bottom: 20px;
     }
+
     p {
       display: block;
       background-color: #e95f45;
@@ -313,6 +351,7 @@ body {
       border-radius: 5px;
     }
   }
+
   &--new {
     position: absolute;
     left: auto;
@@ -329,13 +368,16 @@ body {
     color: #fff;
     font-size: 1.15em;
     z-index: 100;
+
     @media screen and (max-width: 500px) {
       display: none;
     }
+
     i {
       font-size: 1.5em;
     }
   }
+
   h3 {
     margin-top: 0;
     margin-bottom: 0;
@@ -346,6 +388,7 @@ body {
     font-weight: 700;
     margin-bottom: 20px;
   }
+
   p {
     margin-bottom: 0;
     font-size: 18px;
@@ -357,15 +400,18 @@ body {
 .reason {
   margin-top: 200px;
   margin-bottom: 100px;
+
   h3 {
     text-align: center;
     font-size: 3em;
     font-weight: 700;
   }
+
   &--subtitle {
     text-align: center;
     font-size: 1.15em;
   }
+
   &--wrap {
     background-color: #f2f4f8;
     border-top-left-radius: 20px;
@@ -374,31 +420,37 @@ body {
     height: fit-content;
     max-height: 100vh;
   }
+
   &--table {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 120%;
     margin: auto;
     transform: translateX(-8%);
+
     @media screen and (max-width: 500px) {
       display: block;
       transform: translateX(0%);
       width: 100%;
     }
   }
+
   &--item {
     margin: 10px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+
     @media screen and (max-width: 500px) {
       width: 80%;
     }
+
     img {
       width: 100%;
       height: 200px;
     }
+
     &-title {
       font-weight: 700;
       font-size: 1.15em;
@@ -408,6 +460,7 @@ body {
 
 .partner {
   margin-top: 200px;
+
   h3 {
     margin-top: 0;
     margin-bottom: 0;
@@ -418,16 +471,19 @@ body {
     font-weight: 700;
     margin-bottom: 20px;
   }
+
   &--about {
     color: rgba(19, 20, 21, 0.9);
     font-size: 1.05em;
     font-weight: 700;
   }
+
   &--list {
     padding: 50px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
   &--item {
     margin: 0 15px;
     padding: 15px 20px;
@@ -439,9 +495,11 @@ body {
     cursor: pointer;
     color: rgb(94, 188, 241);
     transition: all 0.5s ease;
+
     &:hover {
       box-shadow: 0px 0px 20px 4px #00000023;
     }
+
     img {
       margin-right: 20px;
       width: 25px;
@@ -452,6 +510,7 @@ body {
 
 .comment {
   margin-top: 150px;
+
   &--wrap {
     background-color: #f7f4f4f0;
     padding: 30px;
@@ -459,16 +518,19 @@ body {
     -webkit-box-shadow: -20px 18px #ff0909;
     box-shadow: -20px 30px #fb5a5a;
   }
+
   img {
     width: 90%;
     display: block;
     margin: auto;
   }
+
   &--content {
     font-weight: 700;
     font-size: 1.5em;
     line-height: 1.3;
   }
+
   button {
     border: none;
     color: #e49d3c;
@@ -481,12 +543,14 @@ body {
 
 .action {
   margin-top: 100px;
+
   &--wrap {
     background-color: #3689f5f0;
     padding: 60px 30px;
     border-radius: 20px;
     box-shadow: 20px 30px #0361a0;
   }
+
   h3 {
     margin-top: 0;
     margin-bottom: 0;
@@ -497,10 +561,12 @@ body {
     font-weight: 700;
     margin-bottom: 20px;
   }
+
   &--button-wrap {
     display: flex;
     flex-wrap: wrap;
   }
+
   button {
     display: flex;
     margin: 5px 5px;
@@ -517,6 +583,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.2px;
     border: none;
+
     &.blue {
       color: #fff;
       background-color: #043da7;
@@ -526,6 +593,7 @@ body {
 
 footer {
   margin-top: 100px;
+
   a {
     padding-right: 6px;
     padding-left: 5px;
@@ -535,6 +603,6 @@ footer {
     font-weight: 700;
     text-decoration: none;
   }
-  div {
-  }
+
+  div {}
 }

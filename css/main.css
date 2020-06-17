@@ -115,7 +115,7 @@ body {
 }
 
 .landing {
-  background: url("/images/landing background.png");
+  background: url("./images/landing background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
